@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AguaChiapas | Crisis del Agua</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="scanlines"></div>
+
+<nav class="navbar">
+  <div class="logo">Agua<span>Chiapas</span></div>
+  <ul>
+    <li><a href="index.html">Inicio</a></li>
+    <li><a href="galeria.html">Galería</a></li>
+    <li><a href="impacto.html">Impacto</a></li>
+    <li><a href="comunidad.html">Comunidad</a></li>
+  </ul>
+</nav>
+
+<header class="hero">
+  <video autoplay muted loop playsinline class="hero-video">
+    <source src="https://www.w3schools.com/howto/rain.mp4" type="video/mp4">
+  </video>
+  <div class="water-overlay"></div>
+  <div class="hero-content">
+    <p class="hero-eyebrow">// Alerta ambiental — Chiapas, México</p>
+    <h1>
+      El agua de
+       <span>Chiapas</span><br>
+          está en             peligro 
+    </h1>
+    <p>
+      Ríos contaminados, comunidades afectadas y ecosistemas destruidos.
+      Descubre la realidad detrás de la crisis hídrica.
+    </p>
+    <a href="galeria.html" class="hero-btn">
+      Explorar información
+    </a>
+  </div>
+</header>
+
+<section class="stats-section">
+  <div class="stat-card glass">
+    <h2>60%</h2>
+    <p>Ríos contaminados</p>
+  </div>
+  <div class="stat-card glass">
+    <h2>1.2M</h2>
+    <p>Personas afectadas</p>
+  </div>
+  <div class="stat-card glass">
+    <h2>85%</h2>
+    <p>Aguas residuales sin tratamiento</p>
+  </div>
+</section>
+
+<section class="info-section">
+  <div class="section-title">
+    <h2>La crisis <span>silenciosa</span></h2>
+    <div class="section-line"></div>
+    <p>Tres frentes de una misma emergencia ambiental que afecta a millones de chiapanecos.</p>
+  </div>
+  <div class="info-grid">
+    <div class="info-card reveal" onclick="abrirModal('rio')">
+      <img src="https://www.elsoldelsoconusco.com/wp-content/uploads/2022/01/severa-contaminacion-en-rios-de-tapachula-por-descargas-residuales-sin-tratamiento-1024x768.jpg" alt="Ríos contaminados">
+      <div class="info-content">
+        <h3>Ríos contaminados</h3>
+        <p>Más de 60% de las cuencas hídricas presentan niveles críticos de contaminación por residuos industriales y aguas negras.</p>
+      </div>
+    </div>
+    <div class="info-card reveal" onclick="abrirModal('basura')">
+      <img src="https://movimientoantorchista.org.mx/uploads/images/20210210040312.jpg" alt="Basura y residuos">
+      <div class="info-content">
+        <h3>Basura y residuos</h3>
+        <p>Toneladas de residuos sólidos llegan a ríos y lagos cada año, alterando ecosistemas acuáticos de forma irreversible.</p>
+      </div>
+    </div>
+    <div class="info-card reveal" onclick="abrirModal('comunidad')">
+      <img src="https://frayba.org.mx/sites/default/files/description/aguasancrisweb.jpg" alt="Comunidades afectadas">
+      <div class="info-content">
+        <h3>Comunidades afectadas</h3>
+        <p>Poblaciones indígenas y rurales son las más vulnerables: carecen de acceso a agua potable segura y sistemas de saneamiento.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="video-section">
+  <div class="section-title">
+    <h2>Videos <span>informativos</span></h2>
+    <div class="section-line"></div>
+    <p>Testimonios y documentales sobre la situación hídrica en Chiapas.</p>
+  </div>
+  <div class="video-grid">
+    <div class="video-card reveal">
+      <video controls poster="https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1200&auto=format&fit=crop">
+        <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="video-card reveal">
+      <video controls poster="https://images.unsplash.com/photo-1473773508845-188df298d2d1?q=80&w=1200&auto=format&fit=crop">
+        <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.webm" type="video/webm">
+      </video>
+    </div>
+  </div>
+</section>
+
+<!-- MODAL -->
+<div class="modal" id="modal">
+  <div class="modal-box">
+    <button class="close-btn" onclick="cerrarModal()">✕</button>
+    <h2 id="modal-title"></h2>
+    <p id="modal-text"></p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

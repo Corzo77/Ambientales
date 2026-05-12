@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Comunidad | AguaChiapas</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="scanlines"></div>
+
+<nav class="navbar">
+  <div class="logo">Agua<span>Chiapas</span></div>
+  <ul>
+    <li><a href="index.html">Inicio</a></li>
+    <li><a href="galeria.html">Galería</a></li>
+    <li><a href="impacto.html">Impacto</a></li>
+    <li><a href="comunidad.html">Comunidad</a></li>
+  </ul>
+</nav>
+
+<section class="community-page">
+
+  <div class="section-title">
+    <h2>Voces de la <span>comunidad</span></h2>
+    <div class="section-line"></div>
+    <p>Comentarios generados con inteligencia artificial, inspirados en testimonios reales de Chiapas. Cada visita muestra perspectivas nuevas.</p>
+  </div>
+
+  <div id="comments-list" class="comments-grid"></div>
+
+</section>
+
+<!-- Formulario de comentario con respuesta IA -->
+<section class="comment-form-section">
+  <h2>¿Qué opinas tú?</h2>
+  <p style="color:var(--silver);opacity:.6;margin-bottom:28px;font-size:.9rem;line-height:1.7;">
+    Deja tu comentario y la IA de AguaChiapas te responderá con una perspectiva del contexto local.
+  </p>
+
+  <form id="comment-form">
+    <input type="text" id="cf-nombre" placeholder="Tu nombre" maxlength="50" required>
+    <textarea id="cf-texto" placeholder="Tu opinión sobre la crisis del agua en Chiapas…" rows="4" maxlength="400" required></textarea>
+    <button type="submit">Enviar comentario ✦</button>
+  </form>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
